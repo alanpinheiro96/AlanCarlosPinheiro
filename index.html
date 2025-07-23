@@ -1,0 +1,134 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>curriculo - Alan Pinheiro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
+  <body onresize="mudouTamanho()">
+    <header>
+      <div class="container">
+        <img class="foto-perfil" src="image//profile/perfil.png" alt="Foto de perfil"/>
+        <i id="burguer" class="material-icons" onclick="clicMenu()">menu</i>
+        <menu id="itens">
+          <nav>
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </menu>
+        <a class="botao-contato" href="https://wa.me/5514997577732?text=Olá,%20gostaria%20de%20falar%20com%20você!" target="_blank">Entrar em contato</a>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="apresentacao" id="index">
+          <h3>Olá, eu sou <br /><strong><span>Alan Carlos Pinheiro</span></strong></h3>
+          <img class="img-cv" src="image/profile/alan.png" alt="Currículo" />
+          <h1>Desenvolvedor Full Stack</h1>
+          <a class="btn-download" href="arquivos/Alan Carlos Pinheiro.pdf" download="CV-AlanCarlosPinheiro.pdf">Download CV</a>
+          <a class="btn-orcamento" href="https://wa.me/5514997577732?text=Olá,%20gostaria%20de%20falar%20com%20você!" target="_blank">Faça um orçamento</a>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-sobre">
+          <h2><span>Skills</span></h2>
+          <div class="habilidades">
+            <label>Front-end</label>
+            <input type="range" class="slider" value="80" />
+
+            <label>Back-end</label>
+            <input type="range" class="slider" value="75" />
+
+            <label>Banco de dados</label>
+            <input type="range" class="slider" value="65" />
+
+            <label>UI/UX</label>
+            <input type="range" class="slider" value="85" />
+          </div>
+      </section>
+
+      <section>
+        <div class="section-sobre" id="sobre">
+          <h2><span>Sobre mim</span></h2>
+          <p>Sou um desenvolvedor apaixonado por criar soluções inovadoras. Com experiência em projetos pessoais com front-end e back-end, busco sempre aprimorar minhas habilidades e entregar projetos de alta qualidade. Estou sempre aberto a novos desafios e oportunidades de aprendizado.</p>
+        </div>
+      </section>
+      
+      <section>
+        <div class="section-sobre" id="sobre">
+          <h2><span>Formação</span></h2>
+          <p><strong>Pós-graduação lato sensu em MBA em gestão de projetos</strong> - UniCesumar - formação prevista em abril/2026</p>
+          <p><strong>Bacharelado em tecnologia da informação</strong> - Univesp - formação prevista em julho/2027</p>
+          <p><strong>Graduação em tecnologia em processos gerenciais</strong> - UniCesumar - concluído em 2025</p>
+          <p><strong>Técnico em desenvolvimento de sistemas</strong> - Etec Comendador João Raiz - concluído em 2025</p>
+          <p><strong>Técnico em marketing</strong> - Etec Comendador João Raiz - concluído em 2019</p>
+          <p><strong>Técnico em administração</strong> - Etec Comendador João Raiz - concluído em 2018</p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-projetos" id="projetos">
+          <h2><span>Meus projetos</span></h2>
+          <p>Aqui estão alguns dos meus projetos mais recentes. Cada um deles representa uma parte do meu aprendizado e desenvolvimento como desenvolvedor.</p>
+            <h4 class="projeto-nome">Ego: plataforma de serviços de beleza </h4>
+            <img class="project-img" src="Image/Trabalhos/1.png"alt="Tela inicial do projeto"/>
+            <img class="project-img" src="Image/Trabalhos/2.png"alt="Tela inicial do projeto"/>
+            <img class="project-img" src="Image/Trabalhos/3.png"alt="Tela divulgação projeto"/>
+            <img class="project-img" src="Image/Trabalhos/4.png"alt="Dashboard administrativo"/>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-sobre">
+          <h2><span>Idiomas</span></h2>
+          <h1>Inglês</h1>
+          <div class="idiomas">
+            <label>Leitura</label>
+            <input type="range" class="slider" value="97" />
+            
+            <label>Escrita</label>
+            <input type="range" class="slider" value="93" />
+            
+            <label>Conversação</label>
+            <input type="range" class="slider" value="80" />
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-contato" id="contato">
+          <hr>
+          <h2><span>Contato</span></h2>
+          <p>Se você está interessado em fazer algum projeto, sinta-se à vontade para entrar em contato.</p>
+          <a class="botao-contato" href="https://wa.me/5514997577732?text=Olá,%20gostaria%20de%20falar%20com%20você!" target="_blank" rel=""> Entrar em contato</a>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+          itens.style.display = "block";
+        } else {
+          itens.style.display = "none";
+        }
+      }
+
+      function clicMenu() {
+        if (itens.style.display == "block") {
+          itens.style.display = "none";
+        } else {
+          itens.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>
