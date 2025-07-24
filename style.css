@@ -101,6 +101,10 @@ menu ul li a {
   display: block;
 }
 
+#itens {
+  display: none;
+}
+
 .apresentacao {
   margin-top: 10px;
   text-align: start;
